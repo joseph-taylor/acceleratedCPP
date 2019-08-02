@@ -1,0 +1,26 @@
+The only difference in the code,
+relative to chapter13p1,
+is in the Core.h header file:
+
+<<< double grade() const;
+>>> virtual double grade() const;
+
+This tells the implemenation to use
+the version of the function relevant
+to the type of object in question (see L13-29 of inheritance.cpp)
+
+NOTE:
+the virtual label can only be used inside class definitions.
+the derived classes do not need to repeat the virtual designation.
+
+TERMINOLOGY:
+dynamic binding - functions are bound at run time.
+static binding  - functions are bound at compilation time.
+
+EXTRA:
+- If you are using a fixed object, the functions are
+  statically bound, and will correspond to that object.
+- Dynamic binding requires calling a virtual function
+  through a POINTER or REFERENCE to the functions class.
+- The fact that we can use a derived type when a pointer
+  or reference to the base is expected is called POLYMORPHISM.
