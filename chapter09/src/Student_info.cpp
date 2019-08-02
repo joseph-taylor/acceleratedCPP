@@ -18,7 +18,7 @@ Student_info::Student_info(const std::string& nameDummy, const double& midtermDu
     homework(homeworkDummy)
 {}
 
-// destructor
+// destructor (this is the same as what the default would be)
 Student_info::~Student_info()
 {}
 
